@@ -1,0 +1,17 @@
+torch==2.4.0
+torchvision==0.19.0
+diffusers[torch]==0.27.2
+transformers==4.39.3
+tensorboard==2.16.2
+jupyter==1.0.0
+matplotlib==3.9.0
+pandas==2.2.2
+scikit-learn==1.5.0
+lightning==2.3.0
+wandb==0.17.3
+tqdm==4.66.4
+clean_fid==0.1.35
+lpips==0.1.4
+opencv-python==4.10.0.84
+scikit-image==0.24.0
+csvkit==2.0.1
