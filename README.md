@@ -1,4 +1,4 @@
-# GVCFDiffusion: Guided and Variance-Corrected Fusion with One-shot Style Alignment for Large-Content Image Generation
+# [GVCFDiffusion: Guided and Variance-Corrected Fusion with One-shot Style Alignment for Large-Content Image Generation](https://arxiv.org/abs/2412.12771)
 
 # Introduction
 
