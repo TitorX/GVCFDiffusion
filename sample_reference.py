@@ -32,6 +32,11 @@ if __name__ == '__main__':
         prompts = [opt.prompt]
     else:
         prompts = [
+            'A photo of lush forest with a babbling brook',
+            'An illustration of a beach in La La Land style',
+            'Silhouette wallpaper of a dreamy scene with shooting stars',
+            'A beach with palm trees',
+            'A film photo of a beachside street under the sunset',
             'A photo of a city skyline at night',
             'Natural landscape in anime style illustration',
             'A photo of a snowy mountain peak with skiers',

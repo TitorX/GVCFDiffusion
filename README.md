@@ -1,8 +1,23 @@
-# [GVCFDiffusion: Guided and Variance-Corrected Fusion with One-shot Style Alignment for Large-Content Image Generation](https://arxiv.org/abs/2412.12771)
+# GVCFDiffusion: Guided and Variance-Corrected Fusion with One-shot Style Alignment for Large-Content Image Generation (AAAI-25)
 
-# Introduction
+[![arXiv](https://img.shields.io/badge/arXiv-GVCFDiffusion-b31b1b.svg)](https://arxiv.org/abs/2412.12771)
+![Pytorch](https://img.shields.io/badge/PyTorch->=2.0-Red?logo=pytorch)
 
-Producing large images using small diffusion models is gaining increasing popularity, as the cost of training large models could be prohibitive. A common approach involves jointly generating a series of overlapped image patches and obtaining large images by merging adjacent patches. However, results from existing methods often exhibit obvious artifacts, e.g., seams and inconsistent objects and styles. To address the issues, we proposed Guided Fusion (GF), which mitigates the negative impact from distant image regions by applying a weighted average to the overlapping regions. Moreover, we proposed Variance-Corrected Fusion (VCF), which corrects data variance at post-averaging, generating more accurate fusion for the Denoising Diffusion Probabilistic Model. Furthermore, we proposed a one-shot Style Alignment (SA), which generates a coherent style for large images by adjusting the initial input noise without adding extra computational burden. Extensive experiments demonstrated that the proposed fusion methods improved the quality of the generated image significantly. As a plug-and-play module, the proposed method can be widely applied to enhance other fusion-based methods for large image generation.
+![](assets/mountain_range.png)
+
+## Updates
+
+- **(2024-12-18)**: The code for the GVCFDiffusion model is now available.
+
+## Introduction
+
+This repository is the official implementation of **GVCFDiffusion: Guided and Variance-Corrected Fusion with One-shot Style Alignment for Large-Content Image Generation**.
+
+GVCFDiffusion is a versatile module designed to improve the quality of generating images with extensive content by merging neighboring patches. It enables the creation of smooth, large-scale images using a swift ODE-based sampler like DDIM, as well as a higher-quality, longer runtime SDE-based sampler such as DDPM.
+
+**Abstract**
+
+> Producing large images using small diffusion models is gaining increasing popularity, as the cost of training large models could be prohibitive. A common approach involves jointly generating a series of overlapped image patches and obtaining large images by merging adjacent patches. However, results from existing methods often exhibit noticeable artifacts, e.g., seams and inconsistent objects and styles. To address the issues, we proposed Guided Fusion (GF), which mitigates the negative impact from distant image regions by applying a weighted average to the overlapping regions. Moreover, we proposed Variance-Corrected Fusion (VCF), which corrects data variance at post-averaging, generating more accurate fusion for the Denoising Diffusion Probabilistic Model. Furthermore, we proposed a one-shot Style Alignment (SA), which generates a coherent style for large images by adjusting the initial input noise without adding extra computational burden. Extensive experiments demonstrated that the proposed fusion methods improved the quality of the generated image significantly. The proposed method can be widely applied as a plug-and-play module to enhance other fusion-based methods for large image generation.
 
 ## Get Started
 
